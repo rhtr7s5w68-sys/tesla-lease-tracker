@@ -1,0 +1,11 @@
+# Netlify config for the Tesla Lease Deal Tracker.
+# This is a plain static site (no build step) — index.html lives at the repo root.
+[build]
+  publish = "."
+  command = "echo 'static site — nothing to build'"
+
+# Never cache the data file, so new daily snapshots show up immediately.
+[[headers]]
+  for = "/data/history.json"
+  [headers.values]
+    Cache-Control = "no-cache, max-age=0, must-revalidate"
