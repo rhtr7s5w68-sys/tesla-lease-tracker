@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tesla Lease Deal Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Tesla Lease Deal Tracker <span class="region">US · USD</span></h1>
+      <p class="sub">Best time to lease a <strong>Model Y</strong> &amp; <strong>Model Y L</strong> — with price &amp; interest history.</p>
+      <p class="updated" id="updated"></p>
+    </div>
+  </header>
+
+  <main class="wrap" id="app">
+    <p class="loading">Loading lease data…</p>
+  </main>
+
+  <footer class="wrap">
+    <p>Data snapshots the cheapest advertised Tesla lease each day. History builds forward over time.
+       Prices vary by state, credit, and incentives — always confirm on <a href="https://www.tesla.com/current-offers" target="_blank" rel="noopener">tesla.com</a>.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

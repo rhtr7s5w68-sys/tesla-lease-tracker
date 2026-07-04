@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "region": "US",
+    "currency": "USD",
+    "description": "Daily snapshots of Tesla lease offers. History builds forward from the first snapshot. Each snapshot is the cheapest advertised lease for that model on that date.",
+    "lastUpdated": "2026-07-03"
+  },
+  "models": {
+    "model-y": {
+      "name": "Model Y",
+      "offerUrl": "https://www.tesla.com/modely/design"
+    },
+    "model-y-l": {
+      "name": "Model Y L",
+      "offerUrl": "https://www.tesla.com/modely/design",
+      "note": "Launched 2026-07-02 as Launch Series at $61,990. Lease pricing not yet offered by Tesla."
+    }
+  },
+  "snapshots": [
+    {
+      "date": "2026-07-03",
+      "model": "model-y",
+      "trim": "Rear-Wheel Drive",
+      "available": true,
+      "monthly": 459,
+      "dueAtSigning": 4155,
+      "termMonths": 36,
+      "milesPerYear": 10000,
+      "acquisitionFee": 695,
+      "moneyFactor": null,
+      "apr": null,
+      "source": "manual-seed",
+      "note": "Advertised base RWD lease. $3,000 down + first month + $695 acq fee due at signing."
+    },
+    {
+      "date": "2026-07-03",
+      "model": "model-y-l",
+      "trim": "Launch Series",
+      "available": false,
+      "monthly": null,
+      "dueAtSigning": null,
+      "termMonths": null,
+      "milesPerYear": null,
+      "acquisitionFee": null,
+      "moneyFactor": null,
+      "apr": null,
+      "source": "manual-seed",
+      "note": "No lease offered yet. Tracker is watching for the first lease offer."
+    }
+  ]
+}
